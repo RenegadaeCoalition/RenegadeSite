@@ -1,23 +1,46 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Renegade Coalition</title>
-    <style>
-      html, body {
-        height: 100%;
-      }
-      body {
-        margin: 0;
-        background: #4B5320; /* Army green */
-        color: white; /* Makes text visible on green */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font: 700 56px/1.1 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-      }
-    </style>
-  </head>
-  <body>Renegade Coalition</body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Renegade Coalition</title>
+  <style>
+    :root { --army: #4B5320; }
+    html,body { height: 100%; margin: 0; }
+    body {
+      background: var(--army);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 56px;
+      margin-bottom: 20px;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 800px;
+      aspect-ratio: 16 / 9;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <h1>Renegade Coalition</h1>
+
+  <!-- Embedded YouTube video -->
+  <iframe 
+    src="https://www.youtube.com/embed/IDuxfUJS14U" 
+    title="YouTube video player" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</body>
 </html>
